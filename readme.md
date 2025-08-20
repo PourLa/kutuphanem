@@ -238,7 +238,7 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için `LICENSE` dos
 
 ![Eren ÖZTÜRK](https://cdn2.lnk.bi/profilepics/-1626855_20230613971.jpg) 
 
-![[DAHA FAZLASI İÇİN TIKLA](https://lnk.bio/ozern)]
+[DAHA FAZLASI İÇİN TIKLA](https://lnk.bio/ozern)
 
 ## 🙏 Teşekkürler
 
