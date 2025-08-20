@@ -256,6 +256,8 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için `LICENSE` dos
 - Open Library - Ücretsiz kitap API'si
 - ISBN Search - ISBN arama servisi
 - FastAPI - Modern web framework
+- Global AI Hub - Python 202 Bootcamp
+
 
 ![img](https://i.imgur.com/r8qmIBw.png)
 
