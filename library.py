@@ -123,14 +123,14 @@ class Library:
             )
             yanit.raise_for_status()
 
-            corba = BeautifulSoup(yanit.text, "lxml")
+            kazı = BeautifulSoup(yanit.text, "lxml")
 
             # Başlık
-            baslik_elemani = corba.find("h2")
+            baslik_elemani = kazı.find("h2")
             baslik = baslik_elemani.get_text(strip=True) if baslik_elemani else "Bilinmeyen Başlık"
 
             # Yazar
-            yazar_elemani = corba.find("p", string=lambda s: s and "Author:" in s)
+            yazar_elemani = kazı.find("p", string=lambda s: s and "Author:" in s)
             yazar = "Bilinmeyen Yazar"
             if yazar_elemani:
                 yazar_metni = yazar_elemani.get_text(strip=True)
@@ -139,7 +139,7 @@ class Library:
                     yazar = eslesme.group(1).strip()
 
             # Yıl
-            yil_elemani = corba.find("p", string=lambda s: s and "Publication date:" in s)
+            yil_elemani = kazı.find("p", string=lambda s: s and "Publication date:" in s)
             yil = "Bilinmeyen Yıl"
             if yil_elemani:
                 yil_metni = yil_elemani.get_text(strip=True)
