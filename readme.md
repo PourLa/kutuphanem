@@ -91,7 +91,7 @@ uvicorn api:app --reload --host 0.0.0.0 --port 8000
 ##### 📚 Tüm Kitapları Listele
 
 ```bash
-GET http://localhost:8000/kitaplar
+curl -X GET 127.0.0.1:8000/kitaplar
 ```
 
 **Örnek Çıktı:**
@@ -109,12 +109,7 @@ GET http://localhost:8000/kitaplar
 ##### ➕ ISBN ile Kitap Ekle
 
 ```bash
-POST http://localhost:8000/kitaplar
-Content-Type: application/json
-
-{
-  "isbn": "9786059424172"
-}
+curl -X POST http://localhost:8000/kitaplar -H "Content-Type:application/json" -d '{"isbn": "9786059424172"}'
 ```
 
 **Başarılı Yanıt:**
@@ -125,18 +120,21 @@ Content-Type: application/json
         "isbn": "9786059424172",
         "yil": "2017"
 }
+
+Veya {"detail":"Bu ISBN ile zaten bir kitap mevcut"}  
+
 ```
 
 ##### ❌ Kitap Sil
 
 ```bash
-DELETE http://localhost:8000/kitaplar/9789750516146
+curl -X DELETE  127.0.0.1:8000/kitaplar/9789755705859
 ```
 
 **Başarılı Yanıt:**
 ```json
 {
-  "message": "'Vatan Yahut Silistre' kitabı başarıyla silindi"
+  {"mesaj":"'Fareler ve insanlar' kitabı başarıyla silindi"}
 }
 ```
 
