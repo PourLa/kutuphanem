@@ -236,7 +236,7 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için `LICENSE` dos
 
 ## 👨‍💻 Geliştirici
 
-[Eren ÖZTÜRK] - [[DAHA FAZLASI İÇİN TIKLA](https://lnk.bio/ozern)]
+![Eren ÖZTÜRK]([https://img.shields.io/badge/Python-3.8%2B-blue](https://avatars.githubusercontent.com/u/28493747?v=4)) - [[TIKLA](https://lnk.bio/ozern)]
 
 ## 🙏 Teşekkürler
 
