@@ -236,7 +236,7 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için `LICENSE` dos
 
 ## 👨‍💻 Geliştirici
 
-![Eren ÖZTÜRK]((https://cdn2.lnk.bi/profilepics/-1626855_20230613971.jpg) - [[TIKLA](https://lnk.bio/ozern)]
+![Eren ÖZTÜRK](https://cdn2.lnk.bi/profilepics/-1626855_20230613971.jpg) - [[TIKLA](https://lnk.bio/ozern)]
 
 ## 🙏 Teşekkürler
 
