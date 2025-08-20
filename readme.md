@@ -7,6 +7,8 @@ Global AI Hub Python 202 Bootcamp Projesi için Python ile geliştirilmiş, Fast
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+![GlobalAIHub](https://img.shields.io/badge/GlobalAIHub.8%2B-blue)
+
 
 ## 🌟 Özellikler
 
