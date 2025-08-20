@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Test Book",
+        "author": "Test Author",
+        "isbn": "1234567890",
+        "year": "Bilinmeyen Yıl"
+    },
+    {
+        "title": "Suc ve Ceza",
+        "author": "Фёдор Михайлович Достоевский",
+        "isbn": "9789750516146",
+        "year": "2014"
+    }
+]
