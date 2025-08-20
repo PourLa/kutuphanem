@@ -32,8 +32,8 @@ Python ile geliştirilmiş, FastAPI tabanlı modern bir kütüphane yönetim sis
 ### 1. Repository'yi Klonlayın
 
 ```bash
-git clone https://github.com/yourusername/library-management-system.git
-cd library-management-system
+git clone https://github.com/PourLa/kutuphanem.git
+cd kutuphanem
 ```
 
 ### 2. Sanal Ortam Oluşturun ve Aktive Edin
@@ -91,52 +91,52 @@ uvicorn api:app --reload --host 0.0.0.0 --port 8000
 ##### 📚 Tüm Kitapları Listele
 
 ```bash
-GET http://localhost:8000/books
+GET http://localhost:8000/kitaplar
 ```
 
 **Örnek Çıktı:**
 ```json
 [
   {
-    "title": "Suc ve Ceza",
-    "author": "Фёдор Михайлович Достоевский",
-    "isbn": "9789750516146",
-    "year": "2014"
-  }
+        "baslik": "Vatan Yahut Silistre",
+        "yazar": "Namık Kemal",
+        "isbn": "9786059424172",
+        "yil": "2017"
+    }
 ]
 ```
 
 ##### ➕ ISBN ile Kitap Ekle
 
 ```bash
-POST http://localhost:8000/books
+POST http://localhost:8000/kitaplar
 Content-Type: application/json
 
 {
-  "isbn": "9789750516146"
+  "isbn": "9786059424172"
 }
 ```
 
 **Başarılı Yanıt:**
 ```json
 {
-  "title": "Suc ve Ceza",
-  "author": "Фёдор Михайлович Достоевский",
-  "isbn": "9789750516146",
-  "year": "2014"
+        "baslik": "Vatan Yahut Silistre",
+        "yazar": "Namık Kemal",
+        "isbn": "9786059424172",
+        "yil": "2017"
 }
 ```
 
 ##### ❌ Kitap Sil
 
 ```bash
-DELETE http://localhost:8000/books/9789750516146
+DELETE http://localhost:8000/kitaplar/9789750516146
 ```
 
 **Başarılı Yanıt:**
 ```json
 {
-  "message": "'Suc ve Ceza' kitabı başarıyla silindi"
+  "message": "'Vatan Yahut Silistre' kitabı başarıyla silindi"
 }
 ```
 
@@ -144,24 +144,35 @@ DELETE http://localhost:8000/books/9789750516146
 
 ```python
 from library import Library
-from book import Book
+from book import Kitap
 
 # Kütüphane oluştur
 library = Library()
 
 # ISBN ile kitap ekle
-book = library.add_book_by_isbn("9789750516146")
+# Bu satır, kodun çalışması için gerçek bir ISBN kullanıyor.
+# '9789750516146' ISBN'si, 'Suc ve Ceza' kitabına aittir.
+print("--- ISBN ile kitap ekleniyor... ---")
+kitap = library.isbn_ile_kitap_ekle("9789750516146")
+if kitap:
+    print(f"Eklendi: {kitap.baslik} by {kitap.yazar}")
 
 # Manuel kitap ekle
-manual_book = Book("Kitap Adı", "Yazar Adı", "1234567890", "2023")
-library.add_book(manual_book)
+print("\n--- Manuel kitap ekleniyor... ---")
+manual_kitap = Kitap("Dune", "Frank Herbert", "9780441172719", "1965")
+library.kitap_ekle(manual_kitap)
+print(f"Eklendi: {manual_kitap.baslik} by {manual_kitap.yazar}")
+
 
 # Kitapları listele
-for book in library.list_books():
+print("\n--- Kütüphanedeki kitaplar: ---")
+for book in library.kitaplari_listele():
     print(book)
 
 # Kitap sil
-library.remove_book("1234567890")
+print("\n--- Bir kitap siliniyor... ---")
+if library.kitap_sil("9780441172719"):
+    print("Kitap başarıyla silindi.")
 ```
 
 ### 🔧 API Dokümantasyonu
