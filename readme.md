@@ -211,10 +211,10 @@ library-management-system/
 
 Test için kullanabileceğiniz örnek ISBN numaraları:
 
-- `9789750516146` - Suç ve Ceza
-- `9789750714191` - Beyaz Diş
-- `9789753628920` - Yabancı
-- `9789750737848` - Fahrenheit 451
+- `9789750516146` - Suç ve Ceza (2014)
+- `9789750714191` - Marie Curie ve Atomlarin Sirri (2017)
+- `9780061002861` - The Murder of Roger Ackroyd (1991)
+- `9786059424172` - Vatan Yahut Silistre (2017)
 
 ## ⚠️ Bilinen Sınırlamalar
 
