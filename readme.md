@@ -2,7 +2,7 @@
 
 # 📚 Kütüphane Yönetim Sistemi
 
-Python ile geliştirilmiş, FastAPI tabanlı modern bir kütüphane yönetim sistemi. ISBN numaraları kullanarak kitap ekleme, silme, listeleme ve arama işlemlerini otomatikleştirir.
+Global AI Hub Python 202 Bootcamp Projesi için Python ile geliştirilmiş, FastAPI tabanlı modern bir kütüphane yönetim sistemi. ISBN numaraları kullanarak kitap ekleme, silme, listeleme ve arama işlemlerini otomatikleştirir.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green)
