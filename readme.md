@@ -203,7 +203,7 @@ library-management-system/
 ├── library.json        # Veri dosyası (otomatik oluşur)
 ├── test_api.py         # API testleri
 ├── test_library_api.py # Library sınıfı testleri
-├── requirements.txt    # Bağımlılıklar
+├── requirements.txt    # Gerekli kütüphaneler
 └── README.md           # Bu dosya
 ```
 
