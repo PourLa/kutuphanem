@@ -236,7 +236,7 @@ Bu proje MIT lisansı altında lisanslanmıştır - detaylar için `LICENSE` dos
 
 ## 👨‍💻 Geliştirici
 
-[Your Name] - [your.email@example.com]
+[Eren ÖZTÜRK] - [[DAHA FAZLASI İÇİN TIKLA](https://lnk.bio/ozern)]
 
 ## 🙏 Teşekkürler
 
